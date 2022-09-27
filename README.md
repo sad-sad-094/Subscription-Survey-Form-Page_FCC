@@ -7,5 +7,5 @@ Subsccription Survey Form Page is a survey form page bluit as a part of a freeCo
 It was built from `HTML5` and `CSS` native.
 
 Deploy URLs: <br>
- <br>
- https://codepen.io/sad-sad-094/full/KKWzmbG
+https://sad-sad-094.github.io/Subscription-Survey-Form-Page_FCC/ <br>
+https://codepen.io/sad-sad-094/full/KKWzmbG
