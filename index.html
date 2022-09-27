@@ -1,0 +1,96 @@
+<!--
+    Author: Sebastian Aguirre Duque
+    Contact: sadw621@gmail.com
+-->
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css"> 
+    <title>FCC Survey Form</title>
+</head>
+
+<body>
+    <header class="form-survey header">
+        <h1 id="title">Subscription Survey Form</h1>
+        <p id="description">Thank you for subscribe to our services</p>
+    </header>
+
+    <section>
+        <form class="form-survey" autocomplete="on" id="survey-form">
+            <label for="name" id="name-label">Name
+                <input type="text" class="input-form" name="Name" id="name" 
+                placeholder="Enter your name" required>
+            </label>
+            <br>
+            <label for="email" id="email-label">Email
+                <input type="email" class="input-form" name="Email" id="email" 
+                placeholder="Enter your email" required>
+            </label>
+            <br>
+            <label for="number" id="number-label">Contact number
+                <input type="text" class="input-form phone" name="number" id="number" value="" 
+                placeholder="Enter your contact number" 
+                minlength="7" maxlength="10" pattern="\d+" required>
+            </label>
+            <br>
+            <label for="age">Age
+                <input type="text" class="input-form" name="Age" id="age" 
+                placeholder="Enter your age" required>
+            </label>
+            <br>
+            <label for="City">City
+                <input type="text" class="input-form" name="City" id="city" 
+                placeholder="Enter your city" required>
+            </label>
+            <br>
+            <br>
+            <label for="socialmedia-tv-friend"> How do you know about our company?
+                <br>
+                <input type="radio" class="checklist" name="socialmedia-tv-friend" value="Socialmedia">
+                Socialmedia
+                <br>
+                <input type="radio" class="checklist" name="socialmedia-tv-friend" value="Television">
+                Television
+                <br>
+                <input type="radio" class="checklist" name="socialmedia-tv-friend" value="Friend">
+                Friend
+            </label>
+            <br>
+            <br>
+            <label for="hiring">For what propouse are you interested?
+                <select name="hiring" id="dropdown" class="input-form">
+                    <option value="none" selected disabled hidden>Select option</option>
+                    <option value="company">Company</option>
+                    <option value="store">Store</option>
+                    <option value="ecommerce">Ecommerce</option>
+                    <option value="education">Education</option>
+                </select>
+            </label>
+            <br>
+            <label for="ourservices">Which of our services would you like to hire?
+                <br>
+                <input type="checkbox" class="checklist" name="ourservices" value="Online Shopping Cart">
+                Online Shopping Cart
+                <br>
+                <input type="checkbox" class="checklist" name="ourservices" value="Webpage">
+                Webpage
+                <br>
+                <input type="checkbox" class="checklist" name="ourservices" value="Newsletter">
+                Newsletter
+                <br>
+                <input type="checkbox" class="checklist" name="ourservices" value="Intranet Network">
+                Intranet Network
+            </label>
+            <br>
+            <br>
+            <label for="comments">Any comments or suggestions about our services?
+                <textarea name="comments" id="textarea" rows="10" cols="85"></textarea>
+            </label>
+            <br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
+</body>
